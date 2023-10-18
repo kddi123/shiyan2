@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>首页</title>
+		<meta charset="utf-8">
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/slider.css">
+		<style>
+			#counter {
+				width: 1150px;
+				height: 600px;
+				position: relative;
+				overflow: hidden;
+			}
+
+			#list {
+				width: 3600px;
+				height: 500px;
+				position: absolute;
+				z-index: 1;
+			}
+
+			#list img {
+				margin-top: 50px;
+				width: 1150px;
+				height: 600px;
+				float: left;
+			}
+
+			.arrow {
+				position: absolute;
+				top: 110px;
+				text-decoration: none;
+				z-index: 2;
+				display: none;
+				width: 40px;
+				height: 40px;
+				font-size: 36px;
+				font-weight: bold;
+				line-height: 39px;
+				text-align: center;
+				color: #fff;
+				background-color: rgba(0, 0, 0, 1);
+				cursor: pointer;
+			}
+
+			.arrow:hover {
+				background-color: rgba(0, 0, 0, 0.8);
+			}
+
+			#counter:hover .arrow {
+				display: block;
+			}
+
+			#pre {
+				left: 20px;
+			}
+
+			#next {
+				right: 20px;
+			}
+
+			#list {
+				transition: left 1s;
+			}
+
+			.list {
+				transition: left 0.1s;
+			}
+
+			#buttons {
+				position: absolute;
+				height: 10px;
+				width: 120px;
+				left: 250px;
+				bottom: 20px;
+				z-index: 2;
+			}
+
+			#buttons span {
+				border: 1px solid #FFFFFF;
+				border-radius: 5px;
+				float: left;
+				width: 10px;
+				height: 10px;
+				background-color: #333;
+				margin-right: 5px;
+				cursor: pointer;
+			}
+
+			#buttons .on {
+				background: orangered;
+			}
+		</style>
+
+	</head>
+	<body class="page1">
+		<!--==============================header=================================-->
+		<header>
+			<div class="container_12">
+				<div class="grid_12">
+					<h1><a href="index.html">
+							<img src="images/logo.png" alt="Gerald Harris attorney at law"></a>
+					</h1>
+					<div class="clear"></div>
+				</div>
+				<div class="menu_block">
+					<nav class="">
+						<ul class="sf-menu">
+							<li class="current"><a href="index.html">首页</a></li>
+							<li class="with_ul"><a href="about.html">旅游概览</a>
+								<ul>
+									<li><a href="#">新闻</a></li>
+									<li><a href="#">推荐</a></li>
+								</ul>
+							</li>
+							<li><a href="picture.html">风土人情</a></li>
+							<li><a href="delicacies.html">美食推荐</a></li>
+							<li><a href="scenic.html">景点介绍</a></li>
+							<li><a href="three-js-learning-master/scene-vertices.html">3D</a></li>
+						</ul>
+					</nav>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+
+		<div class="main">
+			<!--=======content================================-->
+
+			<div class="content">
+				<div class="container_12">
+					<div class="container_12">
+						<div id="counter">
+							<div id="list" style="left:0px;">
+								<!-- 设置初始偏移量为0px -->
+								<img src="images/slide1.jpg" alt="1">
+								<img src="images/slide2.jpg" alt="2">
+								<img src="images/slide3.jpg" alt="3">
+								<img src="images/slide2.jpg" alt="2">
+								<img src="images/slide3.jpg" alt="3">
+								<img src="images/slide3.jpg" alt="3">
+							</div>
+							<!-- 图片两边的左右点击切换图片按钮 -->
+							<a href="javascript:;" id="pre" class="arrow">&lt;</a>
+							<a href="javascript:;" id="next" class="arrow">&gt;</a>
+						</div>
+					</div>
+					<div class="grid_12">
+						<h3>热门景点</h3>
+					</div>
+					<div class="boxes">
+						<div class="grid_4">
+							<figure>
+								<div><img src="images/jd1.png" alt="" style="height: 350px;"></div>
+								<figcaption>
+									<h3>七彩云南欢乐世界</h3>
+									七彩云南欢乐世界主题乐园位于昆明晋宁区环湖南路边，以“古滇文化”、“民族文化”、“地域文化”为特色，以独特新颖的方式规划出七大主题分区：滇军营地、幻滇奇域、童梦世界、万象部落、洪荒秘境、霜月寒洲、四季花海，并为孩子们打造了娱乐中心——FEC乐园。
+
+
+								</figcaption>
+							</figure>
+						</div>
+						<div class="grid_4">
+							<figure>
+								<div><img src="images/jd2.png" alt="" style="height: 350px;"></div>
+								<figcaption>
+									<h3>石林风景区</h3>
+									石林景区位于昆明石林县，是昆明的必游景点之一。石林是典型的喀斯特特色地貌，石峰、石芽、落水洞、地下河遍布，峰林幻化成各种形态，剑状、塔状、蘑菇状等等，千奇百怪美轮美奂。
+
+								</figcaption>
+							</figure>
+						</div>
+						<div class="grid_4">
+							<figure>
+								<div><img src="images/jd3.png" alt="" style="height: 350px;"></div>
+								<figcaption>
+									<h3>滇池</h3>
+									滇池又称昆明湖，是中国第六大淡水湖。湖面烟波浩渺，十分壮阔，游玩昆明的游客大多会到这里来看一眼。可以在湖边漫步、乘船游湖，冬季还能喂鸟；也可以登上龙门俯瞰滇池，让人心旷神怡
+								</figcaption>
+							</figure>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="grid_8">
+						<div id="tabs">
+							<ul>
+								<li><a href="#tabs-1">美食推荐</a></li>
+							</ul>
+							<div class="clear"></div>
+							<div class="tab_cont" id="tabs-1">
+								<img src="images/ms1.png" style="width: 300px;height: 200px;">
+								<div class="extra_wrapper">
+									<div>烧腊</div>
+									<p>
+										烧腊包括烧鹅、乳鸽、乳猪以及一些卤水菜式。一般是先用秘制的酱汁淹制一段时间再放到炉里烤,烧鹅、乳猪皮脆,肥美,口味略带广东人喜爱的甜味。深井烧鹅、花田乳鸽是其中的“老字号”。广东人逢年过节上香拜神都会带上乳猪,电影(视)开镜也喜切乳猪图吉利。卤水菜式相对清淡,卤水鹅掌(翼)、卤水鸭肾等。
+									</p>
+
+
+									<div class="clear "></div>
+
+								</div>
+								<div class="clear cl1"></div>
+								<img src="images/ms2.png" style="width: 300px;height: 200px;">
+								<div class="extra_wrapper">
+									<div>蚵仔煎</div>
+									千年古城梅州,有“客都”之称,中原人“衣冠南迁”到这里,不但带来了读书皆上品的风气,也形成了自己的饮食文化客家菜。火柴盒大小的水豆腐炸成金黄色,把猪肉鱼肉做成的馅“酿”入其中,放进葱花,香油,盛在鸡汤瓦煲内焖着,直到香气四溢。想来到了梅州的客家人一时无麦可包饺子,才创出如此美味。
+									<div class="clear"></div>
+
+									<div class="clear "></div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="grid_4">
+						<div class="newsletter_title">美食地址 </div>
+						<div class="n_container">
+							<img src="images/dt.png" style="width: 400px;height: 450px;">
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="bottom_block">
+				<div class="container_12">
+					<div class="grid_2">
+						<h4>联系我:</h4>
+						TEL: 1-800-234-5678<br><a href="#">info@demolink.org</a>
+
+					</div>
+					<div class="grid_2">
+						<h4>地址:</h4>
+						昆明<br><a href="#">昆明</a>
+
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<!--==============================footer=================================-->
+
+		</div>
+		<footer>
+			<div class="container_12">
+				<div class="grid_12">
+
+					<div class="copy">
+						&copy; Copyright &copy; 20122.Company name All李念齐所有.
+						<div class="clear"></div>
+					</div>
+
+		</footer>
+
+		<script type="text/javascript">
+			var counter = document.getElementById("counter");
+			var list = document.getElementById("list");
+			var pre = document.getElementById("pre");
+			var next = document.getElementById("next");
+			var timer;
+
+			//html与js结合式书写 : 变量名.style.left=数值
+			var nextlist = parseInt(list.style.left); //接收偏移量的值
+
+			//偏移量的改变
+			function animals(offset) {
+
+				var newlist = parseInt(list.style.left) + offset; //定义参数随时传递新的偏移量值
+				list.style.left = newlist + 'px'; //偏移量需要单位‘像素px’，否则计算机识别不出，图片将不会移动位置
+				//到达最后一张时，点击右耳朵则返回到第一张
+				if (newlist < -3001) {
+					list.style.left = 0 + 'px';
+					list.setAttribute('class', 'list');
+				}
+				//在第一张时，点左耳朵则返回到最后一张
+				if (newlist > 0) {
+					list.style.left = -3000 + 'px';
+					list.setAttribute('class', 'list');
+				}
+			}
+			// 点击左右耳朵触发函数
+			pre.onclick = function() {
+				animals(1150) //点击左边耳朵，图片往左移一张，偏移量加600
+			}
+			next.onclick = function() {
+				animals(-1150) //点击右边耳朵，图片往右移一张，偏移量减600
+			}
+			// 开始定时器
+			function start() {
+				timer = setInterval(function() {
+					next.onclick()
+				}, 2000);
+			}
+			start();
+			// 关闭定时器
+			function stop() {
+				clearInterval(timer);
+			}
+			// 鼠标移出时,开始定时器
+			counter.onmouseleave = start;
+			// 鼠标移入时,关闭定时器
+			counter.onmouseenter = stop;
+		</script>
+	</body>
+</html>
